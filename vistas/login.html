@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="preload" href="../imagenes/disco.jpg" as="image">
+</head>
+<body>
+      <!-- Spinner -->
+      <div class="contenedor-spinner" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="nombre">Usuario</label>
+                <input type="text" id="nombre" placeholder="Ingrese su usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required>
+            </div>
+            <button type="submit" id="btnIngresar">Iniciar sesión</button>
+        </form>
+        <div class="registrarse">
+            <p>¿No tienes cuenta? <a href="./crear-usuario.html">Regístrate</a></p>
+        </div>
+    </div>
+  
+    <script src="/controlador/login.js"></script>
+</body>
+</html>
